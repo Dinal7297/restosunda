@@ -24,6 +24,7 @@
             color: #2c3e2b;
             background-color: #fcfbfa;
             line-height: 1.6;
+            padding-bottom: 60px; /* Jarak agar tidak tertutup tombol WA melayang */
         }
 
         .container {
@@ -246,6 +247,51 @@
         }
 
         /* ==========================================================================
+           TOMBOL WHATSAPP (Floating & Inline)
+           ========================================================================== */
+        .whatsapp-btn {
+            background-color: #25d366;
+            color: white;
+            padding: 8px 18px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            font-size: 13px;
+            display: inline-inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #1ebd56;
+        }
+
+        /* Tombol Melayang di Pojok HP */
+        .btn-wa-floating {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-wa-floating:hover {
+            transform: scale(1.05);
+            background-color: #1ebd56;
+        }
+
+        /* ==========================================================================
            FOOTER
            ========================================================================== */
         footer {
@@ -257,7 +303,7 @@
         }
 
         footer p {
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
 
         /* ==========================================================================
@@ -358,11 +404,21 @@
         </div>
     </section>
 
+    <!-- Tombol WhatsApp Melayang (Pojok Kanan Bawah) -->
+    <a href="https://wa.me/6281293105899?text=Halo%20Saung%20Alam%20Pasundan,%20saya%20ingin%20pesan/tanya..." class="btn-wa-floating" target="_blank">
+        💬 Chat WhatsApp
+    </a>
+
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2026 Saung Alam Pasundan. Semua Hak Dilindungi.</p>
         <p>Kp.cijulang Rt04 Rw04 desa darmareja kecamatan nagrak</p>
-        <p>Telp: 081293105899 | WhatsApp: 081293105899</p>
+        <p>Telp: 081293105899</p>
+        <p>
+            <a href="https://wa.me/6281293105899?text=Halo%20Saung%20Alam%20Pasundan,%20saya%20ingin%20pesan/tanya..." class="whatsapp-btn" target="_blank">
+                Hubungi via WhatsApp
+            </a>
+        </p>
     </footer>
 
 </body>
