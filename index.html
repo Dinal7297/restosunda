@@ -33,7 +33,7 @@
         }
 
         /* ==========================================================================
-           HEADER & NAVIGATION (Perbaikan Tampilan Mobile)
+           HEADER & NAVIGATION
            ========================================================================== */
         header {
             background-color: rgba(31, 54, 38, 0.98);
@@ -51,7 +51,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap; /* Agar aman jika layar sangat kecil */
+            flex-wrap: wrap;
             gap: 10px;
         }
 
@@ -256,6 +256,10 @@
             font-size: 13px;
         }
 
+        footer p {
+            margin-bottom: 5px;
+        }
+
         /* ==========================================================================
            RESPONSIVE (Tablet & Desktop)
            ========================================================================== */
@@ -275,6 +279,7 @@
 </head>
 <body>
 
+    <!-- Header & Navigasi -->
     <header>
         <div class="container">
             <div class="logo">Saung Alam <span>Pasundan</span></div>
@@ -288,6 +293,7 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -297,6 +303,7 @@
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <h2>Pesona Saung Alam Pasundan</h2>
@@ -305,12 +312,14 @@
         </div>
     </section>
 
+    <!-- Menu Section -->
     <section id="menu" class="menu-section">
         <div class="container">
             <h2>Menu Andalan Kami</h2>
             <div class="line"></div>
             
             <div class="menu-grid">
+                <!-- Kartu Menu 1 -->
                 <div class="menu-card">
                     <div class="img-container">
                         <img src="nasiliwet.webp" alt="Nasi Liwet Komplit">
@@ -322,6 +331,7 @@
                     </div>
                 </div>
 
+                <!-- Kartu Menu 2 -->
                 <div class="menu-card">
                     <div class="img-container">
                         <img src="nasibakar.webp" alt="Nasi Bakar Spesial">
@@ -333,6 +343,7 @@
                     </div>
                 </div>
 
+                <!-- Kartu Menu 3 -->
                 <div class="menu-card">
                     <div class="img-container">
                         <img src="karedok.webp" alt="Karedok Sayur Segar">
@@ -347,9 +358,11 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2026 Saung Alam Pasundan. Semua Hak Dilindungi.</p>
-        <p>Jl. Raya Asri No. 123, Dago Atas, Bandung | Telp: (022) 555-1234</p>
+        <p>Kp.cijulang Rt04 Rw04 desa darmareja kecamatan nagrak</p>
+        <p>Telp: 081293105899 | WhatsApp: 081293105899</p>
     </footer>
 
 </body>
