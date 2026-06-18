@@ -67,7 +67,7 @@ nav ul li a:hover {
 .hero {
     position: relative;
     background: url('https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1600&auto=format&fit=crop&q=80') no-repeat center center/cover;
-    height: 60vh; /* Disesuaikan agar pas di mobile tanpa terlalu tinggi */
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +139,7 @@ h2 {
     padding: 0 10px;
 }
 
-/* Menu Grid System - Fokus Tampilan Mobile */
+/* Menu Grid System */
 .menu-grid {
     display: flex;
     flex-direction: column;
@@ -158,14 +158,14 @@ h2 {
 
 .img-container {
     width: 100%;
-    height: 200px; /* Memastikan rasio box gambar konsisten */
+    height: 200px;
     overflow: hidden;
 }
 
 .menu-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Mencegah gambar gepeng atau distorsi */
+    object-fit: cover;
 }
 
 .menu-info {
