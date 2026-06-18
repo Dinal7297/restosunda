@@ -139,7 +139,7 @@ h2 {
     padding: 0 10px;
 }
 
-/* Menu Grid System */
+/* Menu Grid System - Dioptimalkan untuk Mobile */
 .menu-grid {
     display: flex;
     flex-direction: column;
@@ -158,8 +158,9 @@ h2 {
 
 .img-container {
     width: 100%;
-    height: 200px;
+    height: 220px;
     overflow: hidden;
+    background-color: #f0f0f0;
 }
 
 .menu-card img {
@@ -200,7 +201,7 @@ footer {
     font-size: 13px;
 }
 
-/* Responsif untuk Layar Tablet & Desktop */
+/* Tampilan Desktop / Tablet */
 @media (min-width: 768px) {
     .menu-grid {
         display: grid;
